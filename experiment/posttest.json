@@ -2,37 +2,73 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. Which of the following can be the anode-cathode combination in MFC ?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Carbon-Carbon",
+        "b": "Graphite-Graphite",
+        "c": "Aluminium-Copper",
+        "d": "All the above"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+      
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
+
     {
-      "question": "This is a Sample Question 2?",
+      "question": "2. PEM in the MFC",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Peptone Broth",
+        "b": "Nutrient agar",
+        "c": "Muller Hinton Agar",
+        "d": "Sabouraud Dextrose Agar"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+
+
+    {
+      "question": "3. Purpose of using nafion in MFC ?",
+      "answers": {
+        "a": "Anolyte",
+        "b": "Catholyte",
+        "c": "PEM",
+        "d": "Electrolyte"
       },
+      
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+
+
+
+    {
+      "question": "4. In the simulator, which of the following can be used as an anode for MFC ?",
+      "answers": {
+        "a": "Copper",
+        "b": "Stainless steel",
+        "c": "Barium",
+        "d": "Zinc"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+
+
+
+
+    {
+      "question": "5. The anodic chamber can be filled with",
+      "answers": {
+        "a": "Potassium Permanganate",
+        "b": "Wastewater",
+        "c": "Nutrient agar",
+        "d": "Nutrient broth"
+      },
+      
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
