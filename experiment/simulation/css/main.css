@@ -1,1 +1,316 @@
-/* You CSS goes in here */
+body {
+    background-image: url('images\tabletop.png');
+
+    background-size: 80%;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top 10%;
+    /* Move more up */
+
+}
+div.at-container {
+    display: flex;
+  }
+  #header {
+    color: #4f2037;
+    font-weight: bold;
+    font-size: 3vw;
+    justify-content: center;
+    text-decoration-color: #4f2037;
+    position: relative;
+    align-items: center;
+    margin-left: 5%;
+    padding-top: 2%;
+  }  
+/* chamber img */
+img.centered {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/* chamber img */
+.image-container {
+    position: relative;
+    display: inline-block;
+    top: 180px;
+    
+}
+
+/* waste water */
+.color-overlay {
+    position: absolute;
+    top: 160px;
+    left: 580px;
+    width: 18.5%;
+    height: 50%;
+    background-color: rgb(73, 65, 31);
+    opacity: 0.5;
+    z-index: 1;
+    /*  overlay is on top of the image */
+}
+
+/* catholyte pottassium permaganate */
+.color-overlay1 {
+    position: absolute;
+    top: 158px;
+    left: 930px;
+    width: 20.5%;
+    height: 50%;
+    background-color: rgb(231, 106, 190);
+    opacity: 0.5;
+    z-index: 1;
+    display: none;
+
+}
+
+/*water catholyte*/
+.color-overlay3 {
+    position: absolute;
+    top: 158px;
+    left: 930px;
+    width: 20.5%;
+    height: 50%;
+    background-color: #DEF4FC;
+    opacity: 0.6;
+    z-index: 1;
+    display: none;
+}
+
+/* agar */
+.color-overlay2 {
+    position: absolute;
+    top: 41px;
+    left: 930px;
+    width: 2.4%;
+    height: 82.2%;
+    background-color: #e6d58b;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* overlay1 and two text */
+.overlay-text1 {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: -70px;
+    margin-right: 50px;
+}
+
+.overlay-text2 {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: -70px;
+    margin-right: -80px;
+}
+
+
+
+
+.chamber_anodename {
+    text-align: center;
+    margin-left: -530px;
+    margin-top: -20px;
+    opacity: 0.9;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.chamber_cathodename {
+    text-align: center;
+    margin-left: 500px;
+    margin-top: -20px;
+    opacity: 0.9;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.commonAnode-container {
+    text-align: center;
+    /* Center the image within the container */
+}
+
+.commonAnode-container img {
+    width: 2%;
+    height: 150px;
+    opacity: 0.9;
+    position: absolute;
+    left: 48%;
+    /* Move the image to the horizontal center */
+    transform: translateX(-200%);
+    /* Adjust the image horizontally to center it */
+    margin-top: -50px;
+    z-index: 1;
+    display: none;
+}
+
+
+
+
+.commonCathode-container {
+    text-align: right;
+    position: relative;
+}
+
+.commonCathode-container img {
+    right: 820px;
+    margin-top: -53px;
+    width: 2%;
+    height: 150px;
+    opacity: 0.9;
+    z-index: 1;
+    position: absolute;
+    display: none;
+}
+
+
+.image-nameCathode {
+    position: absolute;
+    right: 830px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(236, 234, 234);
+    z-index: 1;
+}
+
+
+.stand_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1vh;
+    /* Adjust the height as needed */
+    width: 40%;
+    filter: grayscale(5%);
+    opacity: 0.85;
+}
+
+#stand-image {
+    max-width: 105.8%;
+    max-height: 800%;
+    margin-bottom: 340px;
+    margin-left: 1142px;
+   
+}
+
+
+/*BULB css*/
+.bulb_image {
+    text-align: center;
+    position: relative;
+    top: -285px;
+    margin-left: 1px;
+}
+
+#bulbOff-image {
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%);
+    text-align: center;
+}
+
+
+
+#bulbOn-image {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.wire_image {
+    text-align: center;
+    margin-top: -290px;
+}
+
+#wire-image {
+    width: 200px;
+    height: 170px;
+    margin-left: -160px;
+   
+   
+   
+}
+.wirepiece_image {
+    text-align: center;
+    margin-top: -280px;
+    
+}
+
+#wirepiece-image {
+    width: 180px;
+    height: 170px;
+    margin-left: -140px;
+}
+
+
+/* Target the div with class "wirepieceright_image" */
+.wirepieceright_image {
+    text-align: center;
+    margin-top: -175px;
+  
+   
+  }
+  
+  /* Target the image with id "wirepieceright-image" */
+  #wirepieceright-image {
+    width: 180px;
+    height: 170px;
+    margin-left: 130px;
+
+  }
+  
+
+  .wire2_image {
+    text-align: center;
+    margin-top: -55px;
+    margin-left: 190px;
+   
+  }
+  
+  /* Target the image with id "wirepieceright-image" */
+  #wire2_image-image {
+    width: 170px;
+    height: 10%;
+  }
+
+  /* Menu Alignment*/
+ .main-container  {
+    margin-left:200px;
+  }
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+     padding: 10px;
+     font-size: 18px;
+    border: 1px solid #ccc;
+    text-align: left;
+    background-color: #f7f0f0;
+    font-weight: bold;
+    text-align: left;
+    width: 10%;
+    font-weight: bold;
+}
+
+.custom-select {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: bold;
+ 
+}
+
+
+.custom-select {
+  background-color: rgb(228, 109, 155);
+}
+
+.custom-select option:checked {
+  background-color: #ddd;
+}
