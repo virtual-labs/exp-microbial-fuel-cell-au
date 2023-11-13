@@ -1,11 +1,11 @@
 body {
     background-image: url('./images/tabletop.png');
-    margin: 0;
-    padding: 0;
-    background-size: cover;
+
+    background-size: 80%;
+
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center ;
+    background-attachment: local;
+    background-position: center top 10%;
 
   
 }
