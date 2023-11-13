@@ -1,32 +1,28 @@
 body {
-    
-    margin: 0;
-    padding: 0;
-  background-image: url('./images/tabletop.png'); 
+    background-image: url('./images/tabletop.png');
 
-    background-size: cover;
+    background-size: 80%;
 
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center ;
+    background-position: center top 10%;
+    /* Move more up */
 
-  
 }
 div.at-container {
     display: flex;
-    
   }
   #header {
-        color: #4f2037;
-        font-weight: bold;
-        font-size: 3vw;
-        justify-content: center;
-        text-decoration-color: #4f2037;
-        position: relative;
-        align-items: center;
-        margin-left: 5%;
-        padding-top: 2%;
-      }  
+    color: #4f2037;
+    font-weight: bold;
+    font-size: 3vw;
+    justify-content: center;
+    text-decoration-color: #4f2037;
+    position: relative;
+    align-items: center;
+    margin-left: 5%;
+    padding-top: 2%;
+  }  
 /* chamber img */
 img.centered {
     max-width: 40%;
@@ -47,44 +43,37 @@ img.centered {
 /* waste water */
 .color-overlay {
     position: absolute;
-    top: 44%; 
-    left: 30.4%; 
-    width: 18.5%; 
-    height: 50%; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    top: 160px;
+    left: 580px;
+    width: 18.5%;
+    height: 50%;
+    background-color: rgb(73, 65, 31);
     opacity: 0.5;
     z-index: 1;
-    background-color: rgb(73, 65, 31); 
+    /*  overlay is on top of the image */
 }
 
 /* catholyte pottassium permaganate */
 .color-overlay1 {
     position: absolute;
-    top: 44%;
-    left: 48.9%;
-    width: 20.4%;
+    top: 158px;
+    left: 930px;
+    width: 20.5%;
     height: 50%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: rgb(231, 106, 190);
     opacity: 0.5;
     z-index: 1;
     display: none;
+
 }
 
 /*water catholyte*/
 .color-overlay3 {
     position: absolute;
-    top: 44%;
-    left: 48.9%;
+    top: 158px;
+    left: 930px;
     width: 20.5%;
     height: 50%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: #DEF4FC;
     opacity: 0.6;
     z-index: 1;
@@ -94,13 +83,10 @@ img.centered {
 /* agar */
 .color-overlay2 {
     position: absolute;
-    top: 11%;
-    left: 48.9%;
-    width: 2.3%;
-    height: 82.5%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    top: 41px;
+    left: 930px;
+    width: 2.4%;
+    height: 82.2%;
     background-color: #e6d58b;
     opacity: 0.5;
     z-index: 1;
@@ -108,32 +94,19 @@ img.centered {
 
 /* overlay1 and two text */
 .overlay-text1 {
-   
-    font-size: 1.5vw; 
     font-weight: bold;
-    margin: 0 auto;
-    padding: 10px;
-    width: 80%;
+    font-size: 25px;
     text-align: center;
-    position: absolute;
-    top:-40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   
+    margin-top: -70px;
+    margin-right: 50px;
 }
 
-
 .overlay-text2 {
-    font-size: 1.5vw; 
     font-weight: bold;
-    margin: 0 auto;
-    padding: 10px;
-    width: 80%;
+    font-size: 25px;
     text-align: center;
-    position: absolute;
-    top:-40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: -70px;
+    margin-right: -80px;
 }
 
 
@@ -157,54 +130,44 @@ img.centered {
     font-weight: bold;
 }
 
-
 .commonAnode-container {
-    position: absolute;
-    top: 30%;
-    left: 43%;
-    width: 2%;
-    height: 50%;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    opacity: 0.8
-     
+    text-align: center;
+    /* Center the image within the container */
 }
 
 .commonAnode-container img {
-    width: 100%;
-    height: 100%;
+    width: 2%;
+    height: 150px;
+    opacity: 0.9;
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 48%;
+    /* Move the image to the horizontal center */
+    transform: translateX(-200%);
+    /* Adjust the image horizontally to center it */
+    margin-top: -50px;
+    z-index: 1;
     display: none;
 }
-
-
 
 
 
 
 .commonCathode-container {
-    position: absolute;
-    top: 30%;
-    left: 55%;
-    width: 2%;
-    height: 50%;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    opacity: 0.8
+    text-align: right;
+    position: relative;
 }
 
 .commonCathode-container img {
-    width: 100%;
-    height: 100%;
+    right: 820px;
+    margin-top: -53px;
+    width: 2%;
+    height: 150px;
+    opacity: 0.9;
+    z-index: 1;
     position: absolute;
-    top: 0;
-    left: 0;
     display: none;
 }
+
 
 .image-nameCathode {
     position: absolute;
@@ -215,159 +178,108 @@ img.centered {
     z-index: 1;
 }
 
-.stand_image {
-    
-        position: absolute;
-        display:inline;
-        top: -10%;
-        left: 29.9%;
-        width: 80%;
-        height: 80%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 1; 
-      
 
+.stand_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1vh;
+    /* Adjust the height as needed */
+    width: 40%;
+    filter: grayscale(5%);
+    opacity: 0.85;
 }
 
 #stand-image {
-    position: absolute;
-    width: 50%;
-    height: 40%;
-    object-fit: cover; 
-  
+    max-width: 105.8%;
+    max-height: 800%;
+    margin-bottom: 340px;
+    margin-left: 1142px;
+   
 }
+
+
 /*BULB css*/
 .bulb_image {
-    top: 45%;
-    left: 47.6%;
-    width: 5%; 
-    height: 10%; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    position: absolute;
+    position: relative;
+    top: -285px;
+    margin-left: 1px;
 }
 
 #bulbOff-image {
-    top: 0; 
-    left: 0; 
-    width: 100%;
-    height: 100%;
-    display: block;
+    width: 100px;
+    height: 100px;
     filter: grayscale(100%);
-    position: absolute;
-    
+    text-align: center;
 }
+
 
 
 #bulbOn-image {
-    top: 0; 
-    left: 0; 
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
 }
-
-
-
 .wire_image {
-    position: absolute;
-    top: 2.5%;
-    left: 39.5%;
-    width: 35%;
-    height: 55.9%;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.9;
-  
+    text-align: center;
+    margin-top: -290px;
 }
 
 #wire-image {
-    position: absolute;
-    width: 30%;
-    height: 60%;
-    
+    width: 200px;
+    height: 170px;
+    margin-left: -160px;
+   
+   
+   
 }
-
-
-
-
-
-
 .wirepiece_image {
-    position: absolute;
-    top: -18%;
-    left: 39.5%;
-    width: 35%;
-    height: 55.9%;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.9;
+    text-align: center;
+    margin-top: -280px;
+    
 }
 
 #wirepiece-image {
-     position: absolute;
-    width: 30%;
-    height: 60%;
+    width: 180px;
+    height: 170px;
+    margin-left: -140px;
 }
 
 
-
+/* Target the div with class "wirepieceright_image" */
 .wirepieceright_image {
-    position: absolute;
-    top: -18%;
-    left: 48%;
-    width: 35%;
-    height: 55.9%;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.9;
+    text-align: center;
+    margin-top: -175px;
   
    
   }
   
-  
+  /* Target the image with id "wirepieceright-image" */
   #wirepieceright-image {
-    position: absolute;
-    width: 30%;
-    height: 60%;
+    width: 180px;
+    height: 170px;
+    margin-left: 130px;
+
   }
-  
   
 
   .wire2_image {
-    position: absolute;
-    top: 1.9%;
-    left: 45%;
-    width: 20%;
-    height: 35%;
-    align-items: center;
-    justify-content: center;
-  
+    text-align: center;
+    margin-top: -55px;
+    margin-left: 190px;
    
   }
   
- 
-  #wire2-image {
-    top: 0; 
-    left: 0; 
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    
+  /* Target the image with id "wirepieceright-image" */
+  #wire2_image-image {
+    width: 170px;
+    height: 10%;
   }
 
   /* Menu Alignment*/
-  .main-container  {
-    position: absolute;
-    top: 20%;
-    left: 11%;
-    width: 80%;
-    height: 50%;
-    
+ .main-container  {
+    margin-left:200px;
   }
 label {
     display: inline-block;
@@ -379,13 +291,12 @@ label {
     background-color: #f7f0f0;
     font-weight: bold;
     text-align: left;
-    width: 12%;
+    width: 10%;
     font-weight: bold;
 }
 
 .custom-select {
-  
-  width: 30%;
+  width: 80%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -403,18 +314,3 @@ label {
 .custom-select option:checked {
   background-color: #ddd;
 }
-
-
-
-
-
-.image-container {
-    position: absolute;
-    display: inline-block;
-    top: 55%;
-    
-}
-
-
-
-  
