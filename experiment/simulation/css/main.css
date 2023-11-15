@@ -2,13 +2,14 @@ body {
     
     margin: 0;
     padding: 0;
-  background-image: url("../images/tabletop.png"); 
-
-    background-size: cover;
+    background-image: url("../images/tabletop.png"); 
+    width:100%;
+    height:auto;
+    background-size: contain;
 
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center ;
+    background-position: bottom center ;
 
   
 }
