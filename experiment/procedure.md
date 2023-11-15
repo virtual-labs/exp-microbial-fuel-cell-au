@@ -1,6 +1,6 @@
 ### Procedure
 
-1.	User can open the simulator window. In the simulator window,  input parameters Anolyte and Catholyte were provided. The design of a microbial fuel cell is also displayed. The anodic chamber (anloyte) is filled with waste water. 
+1.	User can open the simulator window. In the simulator window,  input parameters Anolyte and Catholyte were provided. The design of a microbial fuel cell is also displayed. The anodic chamber (anolyte) is filled with waste water. 
 <img src="images/p1.png" title="" />
 &nbsp;
 
