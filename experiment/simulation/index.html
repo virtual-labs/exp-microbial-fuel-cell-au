@@ -6,10 +6,9 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
 
 </head>
-
 <body>
     <div class='at-container'>
-        <img src="images/logo.png" width="15%" height="4%" style="margin-left:1%; padding-top: 2%">
+        <img src="images\logo.png" width="15%" height="4%" style="margin-left:1%; padding-top: 2%">
        
         <div id='header'>Design and Construction of a Microbial Fuel Cell</div>
     </div>
@@ -52,9 +51,9 @@
     </div>
 
 
-
+   
     <div class="image-container">
-        <img src="images/chamber.png" alt="micro fuel cell"
+        <img src="images\chamber.png" alt="micro fuel cell"
             class="centered">
         <div class="color-overlay">
             <p class="overlay-text1">Waste Water</p>
@@ -68,60 +67,64 @@
             <p class="overlay-text2">Water</p>
         </div>
         <div class="color-overlay2"></div>
-
+        
         <div class="commonAnode-container">
-            <img src="images/aluminium.png" alt="Aluminium"
+            <img src="images\aluminium.png" alt="Aluminium"
                 id="aluminium-image">
 
-            <img src="images/stainlesssteel.png" alt="Stainless Steel"
+            <img src="images\stainlesssteel.png" alt="Stainless Steel"
                 id="stainless-steel-image">
-            <img src="images/manganese.png" alt="Manganese"
+            <img src="images\manganese.png" alt="Manganese"
                 id="manganese-image">
-            <img src="images/graphite.png" alt="Graphite"
+            <img src="images\graphite.png" alt="Graphite"
                 id="graphite-image">
         </div>
 
 
         <div class="commonCathode-container">
-            <img src="images/copper.png" alt="Copper Image"
+            <img src="images\copper.png" alt="Copper Image"
                 id="copper-image">
             <!-- <div class="image-nameCathode">Cu</div> -->
-            <img src="images/graphite.png" alt="Graphite"
+            <img src="images\graphite.png" alt="Graphite"
                 id="cathodegraphite-image">
             <!-- <div class="image-nameCathode">C</div> -->
         </div>
         <div class="stand_image">
-            <img src="images/STAND_updated.png" alt="Stand Image"
+            <img src="images\STAND_updated.png" alt="Stand Image"
                 id="stand-image">
 
         </div>
         <div class="wire_image">
-            <img src="images/background_converted.png" alt="left wireimage"
+            <img src="images\background_converted.png" alt="left wireimage"
                 id="wire-image">
 
         </div>
         <div class="wirepiece_image">
-            <img src="images/background_wire_piece.png"
+            <img src="images\background_wire_piece.png"
                 id="wirepiece-image">
 
         </div>
         <div class="wire2_image">
-            <img src="images/red_wire.png" alt="redright wireimage"
+            <img src="images\red_wire.png" alt="redright wireimage"
                 id="wire2-image">
 
         </div>
         <div class="wirepieceright_image">
-            <img src="images/right_wire.png" id="wirepieceright-image">
+            <img src="images\right_wire.png" id="wirepieceright-image">
 
         </div>
+        <div class="bulb_image" id="bulb">
+            <img id="bulbOff-image" src="images\BULB1.png">
+    
+            <img id="bulbOn-image" style="display:none;" src="images\BULB2.png">
+        </div>
+    
     </div>
 
-    <div class="bulb_image" id="bulb">
-        <img id="bulbOff-image" src="images/BULB1.png">
+    <div class="background">
+        <img src="images\tabletop.png">
 
-        <img id="bulbOn-image" style="display:none;" src="images/BULB2.png">
     </div>
-
    
     
 
@@ -209,12 +212,7 @@
                 document.getElementById("bulb").innerHTML = "<img id=\"bulbOff-image\"\" src=\"images\\BULB1.png\"><img id=\"bulbOn-image\" style=\"display:none;src=\"images\\BULB2.png\">"
 
             }
-            if (selectedAnode == 'Aluminium' && selectedCathode == 'Copper') {
-            console.log(selectedAnode);
-            myChart.style.display = 'block';
-        } else {
-            myChart.style.display = 'none';
-        }
+           
 
         });
 
@@ -264,12 +262,7 @@
             } else {
                 document.getElementById("bulb").innerHTML = "<img id=\"bulbOff-image\"\" src=\"images\\BULB1.png\"><img id=\"bulbOn-image\" style=\"display:none;src=\"images\\BULB2.png\">"
             }
-            if (selectedAnode == 'Aluminium' && selectedCathode == 'Copper') {
-            
-            myChart.style.display = 'block';
-        } else {
-            myChart.style.display = 'none';
-        }
+           
         });
 
 
@@ -302,6 +295,14 @@
 
         });
 
+       
+       
+      
+
+    </script>
+</body>
+
+</html>
        
        
       
