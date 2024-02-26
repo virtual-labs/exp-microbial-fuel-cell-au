@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-<body>
+
+<body style="background-color:rgb(192, 192, 192);">
     <div class='at-container'>
-        <img src="images\logo.png" width="15%" height="4%" style="margin-left:1%; padding-top: 2%">
-       
+        <img src="images\logo.png" width="15%" height="4%"
+            style="margin-left:1%; padding-top: 2%">
+
         <div id='header'>Design and Construction of a Microbial Fuel Cell</div>
     </div>
 
@@ -34,7 +36,6 @@
                 <option selected>Select Electrode</option>
                 <option value="Aluminium">Aluminium</option>
                 <option value="Manganese">Manganese</option>
-                <option value="Carbon">Carbon</option>
                 <option value="Graphite">Graphite</option>
                 <option value="StainlessSteel">StainlessSteel</option>
             </select>
@@ -51,9 +52,9 @@
     </div>
 
 
-   
+
     <div class="image-container">
-        <img src="images\chamber.png" alt="micro fuel cell"
+        <img src="images\tabletop.png" alt="micro fuel cell"
             class="centered">
         <div class="color-overlay">
             <p class="overlay-text1">Waste Water</p>
@@ -67,7 +68,7 @@
             <p class="overlay-text2">Water</p>
         </div>
         <div class="color-overlay2"></div>
-        
+
         <div class="commonAnode-container">
             <img src="images\aluminium.png" alt="Aluminium"
                 id="aluminium-image">
@@ -90,7 +91,7 @@
             <!-- <div class="image-nameCathode">C</div> -->
         </div>
         <div class="stand_image">
-            <img src="images\STAND_updated.png" alt="Stand Image"
+            <img src="images\STAND.png" alt="Stand Image"
                 id="stand-image">
 
         </div>
@@ -99,34 +100,24 @@
                 id="wire-image">
 
         </div>
-        <div class="wirepiece_image">
-            <img src="images\background_wire_piece.png"
-                id="wirepiece-image">
-
-        </div>
+       
         <div class="wire2_image">
             <img src="images\red_wire.png" alt="redright wireimage"
                 id="wire2-image">
 
         </div>
-        <div class="wirepieceright_image">
-            <img src="images\right_wire.png" id="wirepieceright-image">
-
-        </div>
+       
         <div class="bulb_image" id="bulb">
             <img id="bulbOff-image" src="images\BULB1.png">
-    
-            <img id="bulbOn-image" style="display:none;" src="images\BULB2.png">
+
+            <img id="bulbOn-image" style="display:none;"
+                src="images\bulb_on.png">
         </div>
-    
-    </div>
-
-    <div class="background">
-        <img src="images\tabletop.png">
 
     </div>
-   
-    
+
+ 
+
 
     <script>
 
@@ -135,24 +126,23 @@
         anodeDisplay.style.display = "none";
         var cathodeDisplay = document.querySelector(".select-cathode");
         cathodeDisplay.style.display = "none";
-       
+
         const wireLeft = document.querySelector('.wire_image');
         wireLeft.style.display = 'none';
 
-        const wireLeftTop = document.querySelector('.wirepiece_image');
-        wireLeftTop.style.display = 'none';
-
+       
         //Anode Selection
         var anodeSelect = document.querySelector('select[name="anodeSelect')
         var cathodeSelect = document.querySelector('select[name="cathodeSelect')
         var selectedAnode = anodeSelect.value;
-       
+
 
 
 
         //lighting
 
         var bulb_on = document.getElementById('bulbOn-image');
+        console.log(bulb_on);
 
         var bulb_off = document.getElementById('bulbOff-image');
 
@@ -163,7 +153,7 @@
         var manganeseImage = document.getElementById('manganese-image');
         var graphiteImage = document.getElementById('graphite-image');
 
-       
+
 
 
         var anodeSelect = document.getElementById("anodeSelect");
@@ -171,10 +161,10 @@
         // Add an event listener to the Anode select element
         anodeSelect.addEventListener('change', function () {
 
-            
+
             // Get the selected option
             var selectedAnode = anodeSelect.value;
-           
+
             var selectedCathode = cathodeSelect.value;
             // Hide all images first
             aluminiumImage.style.display = 'none';
@@ -182,51 +172,52 @@
             manganeseImage.style.display = 'none';
             graphiteImage.style.display = 'none';
             wireLeft.style.display = 'none';
-            wireLeftTop.style.display = 'none';
+           
             // Show the image for the selected Anode if it matches
             if (selectedAnode === 'Aluminium') {
                 aluminiumImage.style.display = 'block';
                 wireLeft.style.display = 'block';
-                wireLeftTop.style.display = 'block';
+              
 
             } else if (selectedAnode === 'Graphite') {
                 graphiteImage.style.display = 'block';
                 wireLeft.style.display = 'block';
-                wireLeftTop.style.display = 'block';
+               
             }
             else if (selectedAnode === 'StainlessSteel') {
                 stainlessSteelImage.style.display = 'block';
                 wireLeft.style.display = 'block';
-                wireLeftTop.style.display = 'block';
+                
             }
             else if (selectedAnode === 'Manganese') {
                 manganeseImage.style.display = 'block';
                 wireLeft.style.display = 'block';
-                wireLeftTop.style.display = 'block';
+               
             }
             if (selectedCathode !== 'Select Electrode' && selectedAnode !== 'Select Electrode') {
-
-                document.getElementById("bulb").innerHTML = "<img id=\"bulbOff-image\" style=\"display:none;\" src=\"images\\BULB1.png\"><img id=\"bulbOn-image\"  src=\"images\\BULB2.png\">"
+                document.getElementById("bulbOn-image").style.display = "inline";
+                document.getElementById("bulbOff-image").style.display = "none";
 
             } else {
-                document.getElementById("bulb").innerHTML = "<img id=\"bulbOff-image\"\" src=\"images\\BULB1.png\"><img id=\"bulbOn-image\" style=\"display:none;src=\"images\\BULB2.png\">"
 
+                document.getElementById("bulbOff-image").style.display = "inline";
+                document.getElementById("bulbOn-image").style.display = "none";
             }
-           
+
 
         });
 
 
         //Cathode selection
 
-       
+
 
         var cathodecopperImage = document.getElementById('copper-image');
         var cathodeGraphiteImage = document.getElementById('cathodegraphite-image');
 
 
-        const wireRight = document.querySelector('.wirepieceright_image');
-        wireRight.style.display = 'none';
+      
+       
         const wireRightTop = document.querySelector('.wire2_image');
         wireRightTop.style.display = 'none';
 
@@ -236,33 +227,36 @@
         cathodeSelect.addEventListener('change', function () {
             // Get the selected option
             var selectedCathode = cathodeSelect.value;
-           
+
             var selectedAnode = anodeSelect.value;
             // Hide all images first
             cathodecopperImage.style.display = 'none';
             cathodeGraphiteImage.style.display = 'none';
-            wireRight.style.display = 'none';
+           
             wireRightTop.style.display = 'none';
             // Show the image for the selected Anode if it matches
             if (selectedCathode === 'Graphite') {
                 cathodeGraphiteImage.style.display = 'block';
-                wireRight.style.display = 'block';
+              
                 wireRightTop.style.display = 'block';
             }
             else if (selectedCathode === 'Copper') {
                 cathodecopperImage.style.display = 'block';
 
-                wireRight.style.display = 'block';
+               
                 wireRightTop.style.display = 'block';
             }
             if (selectedCathode !== 'Select Electrode' && selectedAnode !== 'Select Electrode') {
+                document.getElementById("bulbOn-image").style.display = "inline";
+                document.getElementById("bulbOff-image").style.display = "none";
 
-                document.getElementById("bulb").innerHTML = "<img id=\"bulbOff-image\" style=\"display:none;\" src=\"images\\BULB1.png\"><img id=\"bulbOn-image\"  src=\"images\\BULB2.png\">"
 
             } else {
-                document.getElementById("bulb").innerHTML = "<img id=\"bulbOff-image\"\" src=\"images\\BULB1.png\"><img id=\"bulbOn-image\" style=\"display:none;src=\"images\\BULB2.png\">"
+                document.getElementById("bulbOff-image").style.display = "inline";
+                document.getElementById("bulbOn-image").style.display = "none";
+
             }
-           
+
         });
 
 
@@ -295,17 +289,9 @@
 
         });
 
-       
-       
-      
 
-    </script>
-</body>
 
-</html>
-       
-       
-      
+
 
     </script>
 </body>
